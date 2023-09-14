@@ -1,12 +1,16 @@
 import "./App.css";
-// import { useEffect } from "react";
+
+import { BrowserRouter } from "react-router-dom";
+import { Routes } from "@/routes";
 
 function App() {
-  // useEffect(() => {
-  //   window.location.href = "/login";
-  // }, []);
-
-  return <div>Hello</div>;
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
